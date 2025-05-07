@@ -9,7 +9,7 @@ import Foundation
 
 var landmarks: [Quiroz_Landmark] = load("landmarkData.json")
 
-func load<T: Decodable>(landmarkData filename: String) -> T {
+func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
     
     guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
